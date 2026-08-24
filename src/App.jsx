@@ -124,7 +124,8 @@ function App() {
       </div>
 
       <footer className="footer">
-        RESA MCQ Tests
+        <a href="/notes.html" className="notes-link">Preparation Notes &amp; Strategy</a>
+        <span>RESA MCQ Tests</span>
       </footer>
     </div>
   )
