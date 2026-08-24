@@ -3,10 +3,14 @@ import TestDetail from './TestDetail'
 import TestScreen from './TestScreen'
 import ResultScreen from './ResultScreen'
 import molecularBiologyTest1 from './data/molecular-biology-test1'
+import molecularBiologyTest2 from './data/molecular-biology-test2'
+import molecularBiologyTest3 from './data/molecular-biology-test3'
 import './App.css'
 
 const tests = [
   { id: 1, title: "Molecular Biology - Test 1 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest1, description: "DNA replication, transcription, translation, gene regulation, operons, mutations, DNA repair" },
+  { id: 2, title: "Molecular Biology - Test 2 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest2, description: "DNA structure & topology, advanced replication, transcription regulation, translation mechanisms, epigenetics, chromatin remodeling" },
+  { id: 3, title: "Molecular Biology - Test 3 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest3, description: "Genome organization, recombination & transposition, RNA biology & non-coding RNAs, molecular techniques, disease mechanisms" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
