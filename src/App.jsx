@@ -5,12 +5,44 @@ import ResultScreen from './ResultScreen'
 import molecularBiologyTest1 from './data/molecular-biology-test1'
 import molecularBiologyTest2 from './data/molecular-biology-test2'
 import molecularBiologyTest3 from './data/molecular-biology-test3'
+import medicalGeneticsTest1 from './data/medical-genetics-test1'
+import medicalGeneticsTest2 from './data/medical-genetics-test2'
+import medicalGeneticsTest3 from './data/medical-genetics-test3'
+import medicalGeneticsTest4 from './data/medical-genetics-test4'
+import genomicsNgsTest1 from './data/genomics-ngs-test1'
+import genomicsNgsTest2 from './data/genomics-ngs-test2'
+import genomicsNgsTest3 from './data/genomics-ngs-test3'
+import genomicsNgsTest4 from './data/genomics-ngs-test4'
+import cancerBiologyTest1 from './data/cancer-biology-test1'
+import cancerBiologyTest2 from './data/cancer-biology-test2'
+import cancerBiologyTest3 from './data/cancer-biology-test3'
+import cancerBiologyTest4 from './data/cancer-biology-test4'
+import immunologyTest1 from './data/immunology-test1'
+import immunologyTest2 from './data/immunology-test2'
+import immunologyTest3 from './data/immunology-test3'
+import immunologyTest4 from './data/immunology-test4'
 import './App.css'
 
 const tests = [
   { id: 1, title: "Molecular Biology - Test 1 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest1, description: "DNA replication, transcription, translation, gene regulation, operons, mutations, DNA repair" },
   { id: 2, title: "Molecular Biology - Test 2 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest2, description: "DNA structure & topology, advanced replication, transcription regulation, translation mechanisms, epigenetics, chromatin remodeling" },
   { id: 3, title: "Molecular Biology - Test 3 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest3, description: "Genome organization, recombination & transposition, RNA biology & non-coding RNAs, molecular techniques, disease mechanisms" },
+  { id: 4, title: "Medical Genetics - Test 1 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest1, description: "Mendelian inheritance, cytogenetics & chromosomal disorders, molecular genetics & mutations, genetic disorders, genetic testing & counseling" },
+  { id: 5, title: "Medical Genetics - Test 2 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest2, description: "Population genetics & Hardy-Weinberg, epigenetics & imprinting, cancer genetics, genetic counseling & risk assessment, gene therapy & precision medicine" },
+  { id: 6, title: "Medical Genetics - Test 3 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest3, description: "Inborn errors of metabolism, connective tissue & skeletal genetics, neurogenetics, immunogenetics, hemoglobinopathies & hematologic genetics" },
+  { id: 7, title: "Medical Genetics - Test 4 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest4, description: "Developmental genetics & teratology, pharmacogenomics, genomics & bioinformatics, genetic ethics & law, complex & multifactorial genetics" },
+  { id: 8, title: "Genomics / NGS - Test 1 - 50 MCQs", questions: 50, category: "Genomics / NGS", data: genomicsNgsTest1, description: "Genome organization & structure, Illumina sequencing fundamentals, long-read sequencing technologies, WGS/WES/panels, sequencing data quality & metrics" },
+  { id: 9, title: "Genomics / NGS - Test 2 - 50 MCQs", questions: 50, category: "Genomics / NGS", data: genomicsNgsTest2, description: "Bioinformatics alignment & variant calling, variant annotation & interpretation, structural variant detection, somatic/cancer genomics, clinical NGS implementation" },
+  { id: 10, title: "Genomics / NGS - Test 3 - 50 MCQs", questions: 50, category: "Genomics / NGS", data: genomicsNgsTest3, description: "Single-cell genomics, epigenomics & methylation sequencing, metagenomics & microbial genomics, transcriptomics & functional genomics, emerging technologies" },
+  { id: 11, title: "Genomics / NGS - Test 4 - 50 MCQs", questions: 50, category: "Genomics / NGS", data: genomicsNgsTest4, description: "Genome assembly & references, clinical genomics workflows, pharmacogenomics & clinical utility, advanced NGS applications, data management & computational genomics" },
+  { id: 12, title: "Cancer Biology - Test 1 - 50 MCQs", questions: 50, category: "Cancer Biology", data: cancerBiologyTest1, description: "Oncogenes & proto-oncogenes, tumor suppressor genes, cell cycle & checkpoints, apoptosis & cell death, DNA damage response & repair in cancer" },
+  { id: 13, title: "Cancer Biology - Test 2 - 50 MCQs", questions: 50, category: "Cancer Biology", data: cancerBiologyTest2, description: "Tumor microenvironment, angiogenesis, invasion & metastasis, cancer immunology, cancer metabolism" },
+  { id: 14, title: "Cancer Biology - Test 3 - 50 MCQs", questions: 50, category: "Cancer Biology", data: cancerBiologyTest3, description: "Hallmarks of cancer, cancer stem cells & clonal evolution, telomere biology & senescence, epigenetics in cancer, carcinogenesis & multi-step model" },
+  { id: 15, title: "Cancer Biology - Test 4 - 50 MCQs", questions: 50, category: "Cancer Biology", data: cancerBiologyTest4, description: "Targeted therapy & precision oncology, cancer genomics & molecular classification, tumor immunotherapy advances, hereditary cancer syndromes, cancer prevention & emerging concepts" },
+  { id: 16, title: "Immunology - Test 1 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest1, description: "Innate immunity (TLRs, complement, NK cells), T-cell development & subsets (Th1/Th2/Th17/Treg), B cells & antibodies, MHC & antigen presentation, cytokines & signaling" },
+  { id: 17, title: "Immunology - Test 2 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest2, description: "Hypersensitivity reactions (types I-IV), autoimmunity, immunodeficiency disorders, transplantation immunology, vaccines & immunological memory" },
+  { id: 18, title: "Immunology - Test 3 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest3, description: "Mucosal & barrier immunity, immune regulation & tolerance, immunological techniques, clinical immunology & HIV, emerging concepts (trained immunity, cGAS-STING, Trm cells)" },
+  { id: 19, title: "Immunology - Test 4 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest4, description: "Lymphoid organs & immune cell development, complement system advanced, immunotherapy & biologics, advanced immunology concepts, clinical immunology special topics" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
