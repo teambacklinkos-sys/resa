@@ -5,6 +5,7 @@ import ResultScreen from './ResultScreen'
 import molecularBiologyTest1 from './data/molecular-biology-test1'
 import molecularBiologyTest2 from './data/molecular-biology-test2'
 import molecularBiologyTest3 from './data/molecular-biology-test3'
+import molecularBiologyTest4 from './data/molecular-biology-test4'
 import medicalGeneticsTest1 from './data/medical-genetics-test1'
 import medicalGeneticsTest2 from './data/medical-genetics-test2'
 import medicalGeneticsTest3 from './data/medical-genetics-test3'
@@ -21,12 +22,17 @@ import immunologyTest1 from './data/immunology-test1'
 import immunologyTest2 from './data/immunology-test2'
 import immunologyTest3 from './data/immunology-test3'
 import immunologyTest4 from './data/immunology-test4'
+import techniquesInBiologyTest1 from './data/techniques-in-biology-test1'
+import techniquesInBiologyTest2 from './data/techniques-in-biology-test2'
+import techniquesInBiologyTest3 from './data/techniques-in-biology-test3'
+import techniquesInBiologyTest4 from './data/techniques-in-biology-test4'
 import './App.css'
 
 const tests = [
   { id: 1, title: "Molecular Biology - Test 1 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest1, description: "DNA replication, transcription, translation, gene regulation, operons, mutations, DNA repair" },
   { id: 2, title: "Molecular Biology - Test 2 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest2, description: "DNA structure & topology, advanced replication, transcription regulation, translation mechanisms, epigenetics, chromatin remodeling" },
   { id: 3, title: "Molecular Biology - Test 3 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest3, description: "Genome organization, recombination & transposition, RNA biology & non-coding RNAs, molecular techniques, disease mechanisms" },
+  { id: 20, title: "Molecular Biology - Test 4 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest4, description: "CRISPR & genome editing, signal transduction pathways, protein folding & modifications, advanced molecular techniques, RNA biology & epitranscriptomics" },
   { id: 4, title: "Medical Genetics - Test 1 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest1, description: "Mendelian inheritance, cytogenetics & chromosomal disorders, molecular genetics & mutations, genetic disorders, genetic testing & counseling" },
   { id: 5, title: "Medical Genetics - Test 2 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest2, description: "Population genetics & Hardy-Weinberg, epigenetics & imprinting, cancer genetics, genetic counseling & risk assessment, gene therapy & precision medicine" },
   { id: 6, title: "Medical Genetics - Test 3 - 50 MCQs", questions: 50, category: "Medical Genetics", data: medicalGeneticsTest3, description: "Inborn errors of metabolism, connective tissue & skeletal genetics, neurogenetics, immunogenetics, hemoglobinopathies & hematologic genetics" },
@@ -43,6 +49,10 @@ const tests = [
   { id: 17, title: "Immunology - Test 2 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest2, description: "Hypersensitivity reactions (types I-IV), autoimmunity, immunodeficiency disorders, transplantation immunology, vaccines & immunological memory" },
   { id: 18, title: "Immunology - Test 3 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest3, description: "Mucosal & barrier immunity, immune regulation & tolerance, immunological techniques, clinical immunology & HIV, emerging concepts (trained immunity, cGAS-STING, Trm cells)" },
   { id: 19, title: "Immunology - Test 4 - 50 MCQs", questions: 50, category: "Immunology", data: immunologyTest4, description: "Lymphoid organs & immune cell development, complement system advanced, immunotherapy & biologics, advanced immunology concepts, clinical immunology special topics" },
+  { id: 21, title: "Techniques in Biology - Test 1 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest1, description: "Study designs, experimental controls, randomization, sampling methods, hypothesis testing" },
+  { id: 22, title: "Techniques in Biology - Test 2 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest2, description: "p-value & statistical significance, confidence intervals, sensitivity/specificity, ROC curves & diagnostic test evaluation" },
+  { id: 23, title: "Techniques in Biology - Test 3 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest3, description: "ELISA, Western blot, PCR/qPCR, flow cytometry, immunohistochemistry" },
+  { id: 24, title: "Techniques in Biology - Test 4 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest4, description: "Microscopy, spectrophotometry, chromatography, electrophoresis, next-generation sequencing (NGS)" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
