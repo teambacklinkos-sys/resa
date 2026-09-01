@@ -26,6 +26,22 @@ import techniquesInBiologyTest1 from './data/techniques-in-biology-test1'
 import techniquesInBiologyTest2 from './data/techniques-in-biology-test2'
 import techniquesInBiologyTest3 from './data/techniques-in-biology-test3'
 import techniquesInBiologyTest4 from './data/techniques-in-biology-test4'
+import biochemistryTest1 from './data/biochemistry-test1'
+import biochemistryTest2 from './data/biochemistry-test2'
+import biochemistryTest3 from './data/biochemistry-test3'
+import biochemistryTest4 from './data/biochemistry-test4'
+import biochemistryTest5 from './data/biochemistry-test5'
+import biochemistryTest6 from './data/biochemistry-test6'
+import biochemistryTest7 from './data/biochemistry-test7'
+import biochemistryTest8 from './data/biochemistry-test8'
+import geneticsTest1 from './data/genetics-test1'
+import geneticsTest2 from './data/genetics-test2'
+import geneticsTest3 from './data/genetics-test3'
+import geneticsTest4 from './data/genetics-test4'
+import geneticsTest5 from './data/genetics-test5'
+import geneticsTest6 from './data/genetics-test6'
+import geneticsTest7 from './data/genetics-test7'
+import geneticsTest8 from './data/genetics-test8'
 import './App.css'
 
 const tests = [
@@ -53,6 +69,22 @@ const tests = [
   { id: 22, title: "Techniques in Biology - Test 2 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest2, description: "p-value & statistical significance, confidence intervals, sensitivity/specificity, ROC curves & diagnostic test evaluation"},
   { id: 23, title: "Techniques in Biology - Test 3 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest3, description: "ELISA, Western blot, PCR/qPCR, flow cytometry, immunohistochemistry"},
   { id: 24, title: "Techniques in Biology - Test 4 - 50 MCQs", questions: 50, category: "Techniques in Biology", data: techniquesInBiologyTest4, description: "Microscopy, spectrophotometry, chromatography, electrophoresis, next-generation sequencing (NGS)"},
+  { id: 25, title: "Biochemistry - Test 1 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest1, description: "Enzyme kinetics & mechanisms, Michaelis-Menten & Lineweaver-Burk, allosteric regulation, enzyme inhibition, protein structure & folding, post-translational modifications"},
+  { id: 26, title: "Biochemistry - Test 2 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest2, description: "Glycolysis, gluconeogenesis, TCA cycle, pentose phosphate pathway, glycogen metabolism, electron transport chain, oxidative phosphorylation"},
+  { id: 31, title: "Biochemistry - Test 3 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest3, description: "Fatty acid synthesis & beta-oxidation, ketogenesis, cholesterol metabolism, amino acid catabolism, urea cycle, one-carbon metabolism"},
+  { id: 32, title: "Biochemistry - Test 4 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest4, description: "Purine & pyrimidine metabolism, salvage pathways, vitamins & coenzymes, cofactor mechanisms, mineral metabolism"},
+  { id: 33, title: "Biochemistry - Test 5 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest5, description: "Membrane biochemistry & transport, signal transduction, G-protein coupled receptors, receptor tyrosine kinases, second messengers, hormone signaling"},
+  { id: 34, title: "Biochemistry - Test 6 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest6, description: "Inborn errors of metabolism, diabetes biochemistry, organ function tests, spectrophotometry, chromatography, electrophoresis, enzyme assays"},
+  { id: 39, title: "Biochemistry - Test 7 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest7, description: "Metabolic integration, fed vs fasting states, tissue-specific metabolism, hormonal regulation, metabolic adaptations in exercise & starvation"},
+  { id: 40, title: "Biochemistry - Test 8 - 50 MCQs", questions: 50, category: "Biochemistry", data: biochemistryTest8, description: "Advanced enzymology & catalytic mechanisms, proteomics & protein interactions, glycobiology, glycoproteins & glycolipids, extracellular matrix biochemistry"},
+  { id: 27, title: "Genetics - Test 1 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest1, description: "Mendelian genetics, dominance patterns, epistasis, pleiotropy, penetrance & expressivity, sex-linked inheritance, maternal inheritance"},
+  { id: 28, title: "Genetics - Test 2 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest2, description: "Linkage analysis & genetic mapping, three-point cross, LOD scores, chromosome structure, chromosomal aberrations, polyploidy & aneuploidy"},
+  { id: 29, title: "Genetics - Test 3 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest3, description: "Hardy-Weinberg equilibrium, genetic drift, gene flow, natural selection, mutation-selection balance, molecular evolution, phylogenetics"},
+  { id: 30, title: "Genetics - Test 4 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest4, description: "Polygenic inheritance, heritability, QTL mapping, variance components, twin studies, multifactorial inheritance, GWAS"},
+  { id: 37, title: "Genetics - Test 5 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest5, description: "Bacterial conjugation, transformation & transduction, plasmids, transposons, bacteriophage genetics, prokaryotic gene regulation"},
+  { id: 38, title: "Genetics - Test 6 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest6, description: "Eukaryotic gene regulation, transcription factors, chromatin remodeling, epigenetics, DNA methylation, histone modifications, genomic imprinting, non-coding RNAs"},
+  { id: 35, title: "Genetics - Test 7 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest7, description: "Homeotic & Hox genes, pattern formation, morphogen gradients, model organisms, cell fate determination, stem cell genetics"},
+  { id: 36, title: "Genetics - Test 8 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest8, description: "Autosomal & X-linked disorders, mitochondrial inheritance, trinucleotide repeats, pedigree analysis, genetic counseling, prenatal diagnosis"},
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
